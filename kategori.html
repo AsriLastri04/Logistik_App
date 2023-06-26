@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
@@ -137,7 +139,7 @@
                 </div>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="nav-icon far fas fa-university"></i>
+                    <i class="nav-icon far fas fa-users"></i>
                     <p>
                       Produsen
                     </p>
@@ -145,7 +147,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="nav-icon far fa-map"></i>
+                    <i class="nav-icon fas far fa-truck-moving"></i>
                     <p>
                       Distributor
                     </p>
@@ -153,7 +155,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="kategori.html" class="nav-link">
-                    <i class="nav-icon far fas fa-university"></i>
+                    <i class="nav-icon fas fa-regular fa-list-ul"></i>
                     <p>
                    Kategori
                     </p>
@@ -161,7 +163,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="toko.html" class="nav-link">
-                    <i class="nav-icon far fa-thin fa-shop"></i> 
+                    <i class="nav-icon fas far fa-cart-plus"></i> 
                     <p>
                       Toko
                     </p>
@@ -169,7 +171,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="produk.html" class="nav-link">
-                    <i class="nav-icon far fas fa-university"></i>
+                    <i class="nav-icon far fas fa-tag"></i>
                     <p>
                 Produk
                     </p>
@@ -177,9 +179,10 @@
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="nav-icon far fa-map"></i>
+                    <i class="nav-icon fas far fa-shipping-fast"></i>
                     <p>
                       Pengiriman
+                    </p>
                   </a>
                 </li>
                  <div class="user-panel  pb-1 mb-1 d">
@@ -227,6 +230,9 @@
                     <!-- /.card-header -->
                     <div class="card-body">
                       <table id="example1" class="table table-bordered table-striped">
+                        <a href="iframe.html" data-toggle="modal" data-target="#kategori"
+                          class="btn btn-primary mb-3"><i class="fas fa-calendar-plus mr-2"></i>Tambah
+                        Data</a>
                         <thead class="bg-dark text-center">
                           <tr>
                             <th class="col-1">No</th>
@@ -268,6 +274,79 @@
           </section>
           <!-- /.content -->
         </div>
+
+                <div class="modal fade" id="kategori">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Form Data Users</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="text" class="col-4 col-form-label">Nama User</label>
+                                <div class="col-8">
+                                    <input id="text" name="text" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-4 col-form-label">Email</label>
+                                <div class="col-8">
+                                    <input id="email" name="email" type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-4 col-form-label">No Telp</label>
+                                <div class="col-8">
+                                    <input id="no_telp" name="no_telp" type="number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-4 col-form-label">alamat</label>
+                                <div class="col-8">
+                                    <input id="alamat" name="alamat" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-4 col-form-label">username</label>
+                                <div class="col-8">
+                                    <input id="username" name="username" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label">Level</label>
+                                <div class="col-8 d-flex justify-content-start">
+                                    <div class="form-check mr-3">
+                                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                        <label class="form-check-label" for="male">
+                                            Admin
+                                        </label>
+                                    </div>
+                                    <div class="form-check mr-3">
+                                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                        <label class="form-check-label" for="female">
+                                            Petugas
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-primary"><a onclick="klik()"
+                          class="text-white">Simpan</a></button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
         <!-- /.content-wrapper -->
         <footer class="main-footer">
           <div class="float-right d-none d-sm-block">
