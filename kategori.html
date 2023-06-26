@@ -3,25 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Area Parkir - SIPAK STTNF</title>
+  <title>LOGISTIK APP</title>
+
   <link href="assets/img/logo.jpeg" rel="icon">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
-     <!-- Preloader -->
-     <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="assets/img/logo.jpeg" alt="AdminLTELogo" height="60" width="60">
-    </div>
+    
+      <!-- Preloader -->
+      <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="assets/img/logo.jpeg" alt="AdminLTELogo" height="60" width="60">
+      </div>
     
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -32,7 +44,6 @@
         </li>
         
       </ul>
-      
       
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
@@ -58,7 +69,6 @@
           </div>
         </li>
         
-        
         <li class="nav-item">
           <a class="nav-link" data-widget="fullscreen" href="#" role="button">
             <i class="fas fa-expand-arrows-alt"></i>
@@ -68,12 +78,12 @@
     </nav>
     <!-- /.navbar -->
     
-       <!-- Main Sidebar Container -->
-       <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="dashboard.html" class="brand-link">
           <img src="assets/img/logo.jpeg" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
-          <span class="brand-text font-weight-light">SIPAK - Backend</span>
+          <span class="brand-text font-weight-light">LOGISTIK - Backend</span>
         </a>
         
         <!-- Sidebar -->
@@ -84,7 +94,7 @@
               <img src="assets/img/user.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-              <a href="#" class="d-block">Ahmad Admin</a>
+              <a href="#" class="d-block">DANI Admin</a>
             </div>
           </div>
           
@@ -115,44 +125,61 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-motorcycle"></i>
+                  <a href="users.html" class="nav-link">
+                    <i class="nav-icon fas fa-address-book"></i>
                     <p>
-                      Kendaraan
-                      <i class="fas fa-angle-left right"></i>
+                     Users
+                   
                     </p>
                   </a>
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="data_kendaraan.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Data Kendaraan</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="data_parkir.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Data Parkir</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
+                 
                 <div class="user-panel  pb-1 mb-1 d">
                 </div>
                 <li class="nav-item">
-                  <a href="gedung.html" class="nav-link">
+                  <a href="#" class="nav-link">
                     <i class="nav-icon far fas fa-university"></i>
                     <p>
-                      Gedung
+                      Produsen
                     </p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="area_parkir.html" class="nav-link">
+                  <a href="#" class="nav-link">
                     <i class="nav-icon far fa-map"></i>
                     <p>
-                      Area Pakrir
+                      Distributor
                     </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="kategori.html" class="nav-link">
+                    <i class="nav-icon far fas fa-university"></i>
+                    <p>
+                   Kategori
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="toko.html" class="nav-link">
+                    <i class="nav-icon far fa-thin fa-shop"></i> 
+                    <p>
+                      Toko
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="produk.html" class="nav-link">
+                    <i class="nav-icon far fas fa-university"></i>
+                    <p>
+                Produk
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon far fa-map"></i>
+                    <p>
+                      Pengiriman
                   </a>
                 </li>
                  <div class="user-panel  pb-1 mb-1 d">
@@ -169,29 +196,6 @@
             <!-- /.sidebar -->
           </aside>
 
-          <div class="modal fade" id="modal-default">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Logout</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Apakah anda yakin ingin keluar?</p>
-                </div>
-                <div class="modal-footer justify-content-between">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                  <button type="button" class="btn btn-primary"><a href="beranda.html" class="text-white">Logout</a></button>
-                </div>
-              </div>
-              <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-          </div>
-          <!-- /.modal -->
-        
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
           <!-- Content Header (Page header) -->
@@ -199,12 +203,12 @@
             <div class="container-fluid">
               <div class="row mb-2">
                 <div class="col-sm-6">
-                  <h1>Data Area Parkir</h1>
+                  <h1>Kategori</h1>
                 </div>
                 <div class="col-sm-6">
                   <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Area Parkir</a></li>
-                    <li class="breadcrumb-item active">Data Area Parkir</li>
+                    <li class="breadcrumb-item"><a href="kategori.html">Kendaraan</a></li>
+                    <li class="breadcrumb-item active">Data Parkir</li>
                   </ol>
                 </div>
               </div>
@@ -218,44 +222,34 @@
                 <div class="col-12">
                   <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">Tabel data area parkir</h3>
+                      <h3 class="card-title">Tabel Kategori</h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
                       <table id="example1" class="table table-bordered table-striped">
-                        <a href="iframe.html" data-toggle="modal" data-target="#form-area"  class="btn btn-primary mb-3"><i class="fas fa-calendar-plus mr-2"></i>Tambah Data</a>
-                        <thead class="bg-dark ">
+                        <thead class="bg-dark text-center">
                           <tr>
                             <th class="col-1">No</th>
-                            <th>Nama Area</th>
-                            <th>Kapasitas</th>
-                            <th>Gedung</th>
-                            <th class="text-center">Action</th>
+                            <th>Nama_Kategori</th>
+                            <th>Status_Kategori</th>
+                            <th>Action</th>
                           </tr>
                         </thead>
-                        <tbody class="">
+                        <tbody class="text-center">
                           <tr>
                             <td>1</td>
-                            <td>Depan Area B2 STTNF
+                            <td>Elektronik
                             </td>
-                            <td>40</td>
-                            <td> Gedung B2 STTNF</td>
+                            <td>Aktif</td>
+                            
+                            
                             <td class="text-center"><button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button> <button class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>Depan Area B2 STTNF
+                            <td>Pakaian
                             </td>
-                            <td>90</td>
-                            <td> Gedung B2 STTNF</td>
-                            <td class="text-center"><button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button> <button class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Depan Area B2 STTNF
-                            </td>
-                            <td>100</td>
-                            <td>Gedung B2 STTNF</td>
+                            <td>Nonaktif</td>
                             <td class="text-center"><button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button> <button class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
                           </tr>
                         </tbody>
@@ -274,59 +268,6 @@
           </section>
           <!-- /.content -->
         </div>
-        
-        <div class="modal fade" id="form-area">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Form Area Parkir</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group row">
-                    <label for="select" class="col-4 col-form-label">Gedung</label> 
-                    <div class="col-8">
-                      <select id="select" name="select" class="custom-select">
-                        <option value="rabbit">Pilih Gedung</option>
-                        <option value="duck">Gedung B</option>
-                        <option value="fish">Gedung A</option>
-                      </select>
-                    </div>
-                  </div> 
-                  <div class="form-group row">
-                    <label for="text" class="col-4 col-form-label">Nama Area</label> 
-                    <div class="col-8">
-                      <input id="text" name="text" type="text" class="form-control">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="text1" class="col-4 col-form-label">Kapasitas</label> 
-                    <div class="col-8">
-                      <input id="text1" name="text1" type="text" class="form-control">
-                    </div>
-                  </div> 
-                </form>
-              </div>
-              <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                <button type="button" class="btn btn-primary"><a  onclick="klik()" class="text-white">Simpan</a></button>
-              </div>
-            </div>
-            <!-- /.modal-content -->
-
-            <script>
-              function klik(){
-                window.alert("Data Area Parkir Tersiman");
-                window.location = "area_parkir.html"
-              }
-            </script>
-          </div>
-          <!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
         <!-- /.content-wrapper -->
         <footer class="main-footer">
           <div class="float-right d-none d-sm-block">
@@ -342,13 +283,6 @@
         <!-- /.control-sidebar -->
       </div>
       <!-- ./wrapper -->
-
-      <script>
-        function klik(){
-          window.alert("Data Gedung Tersiman");
-          window.location = "gedung.html"
-        }
-      </script>
       
       <!-- jQuery -->
       <script src="plugins/jquery/jquery.min.js"></script>

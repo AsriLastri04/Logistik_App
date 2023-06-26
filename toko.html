@@ -196,6 +196,30 @@
             <!-- /.sidebar -->
           </aside>
 
+        <div class="modal fade" id="modal-default">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Logout</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Apakah anda yakin ingin keluar?</p>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-primary"><a href="index.html"
+                                class="text-white">Logout</a></button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -203,12 +227,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Data Users</h1>
+                            <h1>Produk</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="users.html">users</a></li>
-                                <li class="breadcrumb-item active">Data users</li>
+                                <li class="breadcrumb-item"><a href="produk.html">Produk</a></li>
+                                <li class="breadcrumb-item active">Data Produk</li>
                             </ol>
                         </div>
                     </div>
@@ -222,7 +246,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Tabel data users</h3>
+                                    <h3 class="card-title">Tabel Produk</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -235,41 +259,44 @@
                                                 <th class="col-1">No</th>
                                                 <th class="col-2">Nama</th>
                                                 <th class="col-3">Alamat</th>
-                                                <th class="col-2">Nomor Telepon</th>
-                                                <th class="col-2">Email</th>
-                                                <th class="col-2">Level</th>
-                                                <!-- <th class="col-2 text-center">Action</th> -->
+                                                <th class="col-1">Nomor_HP</th>
+                                                <th class="col-2">Status</th>
+                                                <th class="col-2 text-center">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody class="text-ce">
                                             <tr>
                                                 <td>1</td>
-                                                <td>Zaki Raihansan</td>
-                                                <td>Jl. Lenteng Agung No.21</td>
-                                                <td>0821938101</td>
-                                                <td><a href="#">example.gmail</a></td>
-                                                <td>Beginer</td>
-                                                <!-- <td class="text-center"><button class="btn btn-warning"><i
+                                                <td>Mentari</td>
+                                                <td>Jln.Depok</td>
+                                                <td>081290876632</td>
+                                                <td>Aktif</td>
+                                                <td class="text-center"><button class="btn btn-warning"><i
                                                             class="fas fa-pencil-alt"></i></button> <button
                                                         class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                                                </td> -->
+                                                </td> 
                                             </tr>
                                             <tr>
-                                                <td>2</td>
-                                                <td>Andre</td>
-                                                <td>Jl. Lenteng Agung No.21</td>
-                                                <td>0821938101</td>
-                                                <td><a href="#">example.gmail</a></td>
-                                                <td>Beginer</td>
+                                                <td>1</td>
+                                                <td>Mentari</td>
+                                                <td>Jln.Depok</td>
+                                                <td>081290876632</td>
+                                                <td>Aktif</td>
+                                                <td class="text-center"><button class="btn btn-warning"><i
+                                                    class="fas fa-pencil-alt"></i></button> <button
+                                                class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                        </td> 
                                             </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Sulastri</td>
-                                                <td>Jl. Lenteng Agung No.21</td>
-                                                <td>0821938101</td>
-                                                <td><a href="#">example.gmail</a></td>
-                                                <td>Beginer</td>
-                                            </tr>
+                                           <tr>
+                                            <td>1</td>
+                                            <td>Mentari</td>
+                                            <td>Jln.Depok</td>
+                                            <td>081290876632</td>
+                                            <td>Aktif</td>
+                                                <td class="text-center"><button class="btn btn-warning"><i
+                                                    class="fas fa-pencil-alt"></i></button> <button
+                                                class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                        </td> 
                                         </tbody>
 
                                     </table>
@@ -287,7 +314,7 @@
             <!-- /.content -->
         </div>
 
-        <div class="modal fade" id="form-gedung">
+      
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
