@@ -96,7 +96,7 @@
               <img src="assets/img/user.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-              <a href="#" class="d-block">DANI Admin</a>
+              <a href="#" class="d-block">Aziel Admin</a>
             </div>
           </div>
           
@@ -253,7 +253,7 @@
                                 <!-- /.card-header -->
                                 <div class="card-body">
                                     <table id="example1" class="table table-bordered table-striped">
-                                        <a href="iframe.html" data-toggle="modal" data-target="#form-gedung"
+                                        <a href="iframe.html" data-toggle="modal" data-target="#form-toko"
                                             class="btn btn-primary mb-3"><i class="fas fa-calendar-plus mr-2"></i>Tambah
                                             Data</a>
                                         <thead class="bg-dark ">
@@ -315,7 +315,7 @@
             </section>
             <!-- /.content -->
         </div>
-        <div class="modal fade" id="form-gedung">
+        <div class="modal fade" id="form-toko">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -333,21 +333,21 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="email" class="col-4 col-form-label">Alamat</label>
+                                <label for="alamat" class="col-4 col-form-label">Alamat</label>
                                 <div class="col-8">
-                                    <input id="email" name="alamat" type="text" class="form-control">
+                                    <input id="alamat" name="alamat" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="email" class="col-4 col-form-label">No Telp</label>
+                                <label for="no_telp" class="col-4 col-form-label">No Telp</label>
                                 <div class="col-8">
                                     <input id="no_telp" name="no_telp" type="number" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="email" class="col-4 col-form-label">Status</label>
+                                <label for="status" class="col-4 col-form-label">Status</label>
                                 <div class="col-8">
-                                    <input id="alamat" name="status" type="text" class="form-control">
+                                    <input id="status" name="status" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="modal-footer justify-content-between">
@@ -372,42 +372,7 @@
             <!-- /.modal-dialog -->
         </div>
        
-      
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Form Gedung</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group row">
-                                <label for="text" class="col-4 col-form-label">Nama Gedung</label>
-                                <div class="col-8">
-                                    <input id="text" name="text" type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="textarea" class="col-4 col-form-label">Alamat</label>
-                                <div class="col-8">
-                                    <textarea id="textarea" name="textarea" cols="40" rows="5"
-                                        class="form-control"></textarea>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                        <button type="button" class="btn btn-primary"><a onclick="klik()"
-                                class="text-white">Simpan</a></button>
-                    </div>
-                </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-        </div>
+    
         <!-- /.modal -->
         <!-- /.content-wrapper -->
         <footer class="main-footer">
@@ -426,8 +391,8 @@
     <!-- ./wrapper -->
     <script>
         function klik() {
-            window.alert("Data Gedung Tersiman");
-            window.location = "gedung.html"
+            window.alert("Data Toko Tersimpan");
+            window.location = "toko.html"
         }
     </script>
 

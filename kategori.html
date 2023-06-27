@@ -96,7 +96,7 @@
               <img src="assets/img/user.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-              <a href="#" class="d-block">DANI Admin</a>
+              <a href="#" class="d-block">Aziel Admin</a>
             </div>
           </div>
           
@@ -253,7 +253,7 @@
                     <!-- /.card-header -->
                     <div class="card-body">
                       <table id="example1" class="table table-bordered table-striped">
-                        <a href="iframe.html" data-toggle="modal" data-target="#kategori"
+                        <a href="iframe.html" data-toggle="modal" data-target="#form-kategori"
                           class="btn btn-primary mb-3"><i class="fas fa-calendar-plus mr-2"></i>Tambah
                         Data</a>
                         <thead class="bg-dark text-center">
@@ -269,9 +269,7 @@
                             <td>1</td>
                             <td>Elektronik
                             </td>
-                            <td>Aktif</td>
-                            
-                            
+                            <td>Aktif</td>                  
                             <td class="text-center"><button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button> <button class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
                           </tr>
                           <tr>
@@ -298,7 +296,7 @@
           <!-- /.content -->
         </div>
 
-                <div class="modal fade" id="kategori">
+            <div class="modal fade" id="form-kategori">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -316,9 +314,9 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="email" class="col-4 col-form-label">Status_Kategori</label>
+                                <label for="status" class="col-4 col-form-label">Status_Kategori</label>
                                 <div class="col-8">
-                                    <input id="email" name="status" type="status" class="form-control">
+                                    <input id="status" name="status" type="status" class="form-control">
                                 </div>
                               </div>          
                         </form>
@@ -349,7 +347,12 @@
         <!-- /.control-sidebar -->
       </div>
       <!-- ./wrapper -->
-      
+<script>
+    function klik() {
+        window.alert("Data Kategori Tersimpan");
+        window.location = "kategori.html"
+    }
+</script>
       <!-- jQuery -->
       <script src="plugins/jquery/jquery.min.js"></script>
       <!-- Bootstrap 4 -->
